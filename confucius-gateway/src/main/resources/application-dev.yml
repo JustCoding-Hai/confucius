@@ -40,3 +40,7 @@ spring:
           uri: lb://confucius-vod
           predicates:
             - Path=/*/vod/**
+        - id: confucius-statistics
+          uri: lb://confucius-statistics
+          predicates:
+            - Path=/*/statistics/**

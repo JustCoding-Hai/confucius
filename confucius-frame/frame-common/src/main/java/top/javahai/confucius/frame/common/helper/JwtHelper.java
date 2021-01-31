@@ -39,7 +39,7 @@ public class JwtHelper {
                 .setSubject("confucius-user")
                 //颁发时间
                 .setIssuedAt(new Date())
-                //过期时间
+                //过期时间,一般為30min
                 .setExpiration(DateTime.now().plusSeconds(expire).toDate())
                 //用户id
                 .claim("id", jwtInfo.getId())

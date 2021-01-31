@@ -1,5 +1,6 @@
 package top.javahai.confucius.service.uc.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import top.javahai.confucius.service.uc.entity.Member;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -13,4 +14,10 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface MemberMapper extends BaseMapper<Member> {
 
+    /**
+     * count Register Number By Day
+     * @param day
+     * @return
+     */
+    Integer countRegisterNumByDay(@Param("day") String day);
 }

@@ -128,4 +128,9 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         BeanHelper.copyProperties(member,memberDTO);
         return memberDTO;
     }
+
+    @Override
+    public Integer countRegisterNumByDay(String day) {
+        return baseMapper.countRegisterNumByDay(day);
+    }
 }
