@@ -1,0 +1,120 @@
+2021-01-12 11:38:28,427 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 11:38:28,430 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+
+2021-01-12 11:39:29,682 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 11:39:29,682 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 11:39:29,682 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 11:39:29,682 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 11:39:29,687 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 11:39:29,687 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:30:24,940 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1610436608218
+
+2021-01-12 15:30:24,940 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1610436608218
+
+2021-01-12 15:30:47,410 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-12 15:30:47,410 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2021-01-12 15:30:47,410 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-12 15:30:47,410 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2021-01-12 15:30:55,384 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 15:30:55,384 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:30:55,395 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 15:30:55,395 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:30:55,397 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:30:55,397 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:33:42,305 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1610436805548
+
+2021-01-12 15:33:53,057 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:33:53,057 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:33:53,081 INFO service: DEFAULT_GROUP@@service-oss {POS} {IP-ENABLED} valid: 192.168.246.1:8120@DEFAULT, region: unknown, msg: client beat ok
+
+2021-01-12 15:36:47,425 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1610436988207
+
+2021-01-12 15:36:48,452 INFO service: DEFAULT_GROUP@@service-oss {POS} {IP-ENABLED} valid: 192.168.246.1:8120@DEFAULT, region: unknown, msg: client beat ok
+
+2021-01-12 15:36:48,453 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:36:48,453 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 15:54:38,290 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1610438058841
+
+2021-01-12 15:54:53,361 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.246.1:8110:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-12 15:54:53,361 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2021-01-12 15:55:04,143 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 15:55:04,143 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+
+2021-01-12 15:55:04,184 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+
+2021-01-12 16:11:14,006 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1610439055214
+
+2021-01-12 16:11:24,114 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.246.1:8110@DEFAULT, region: unknown, msg: client beat ok
+
+2021-01-12 16:11:24,127 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+
+2021-01-12 16:16:34,142 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1610439376367
+
+2021-01-12 16:16:42,417 INFO service: DEFAULT_GROUP@@service-oss {POS} {IP-ENABLED} valid: 192.168.246.1:8120@DEFAULT, region: unknown, msg: client beat ok
+
+2021-01-12 16:16:42,418 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 16:16:42,418 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.246.1:8120_true,
+
+2021-01-12 18:03:28,083 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1610445789140
+
+2021-01-12 18:03:46,063 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.246.1:8110:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-12 18:03:46,063 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2021-01-12 18:05:11,356 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 18:05:11,356 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+
+2021-01-12 18:05:11,562 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+
+2021-01-12 18:40:14,883 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1610447999364
+
+2021-01-12 18:40:30,548 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-12 18:40:30,548 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2021-01-12 18:40:30,683 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.246.1:8120:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-12 18:40:30,739 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2021-01-12 18:40:30,739 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2021-01-12 18:40:30,739 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2021-01-12 18:43:10,971 INFO {POS} {IP-DISABLED} valid: 192.168.246.1:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1610448174037
+
+2021-01-12 18:43:26,036 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.246.1:8110:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-12 18:43:26,036 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2021-01-12 18:44:29,950 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.246.1:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-12 18:44:29,950 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+
+2021-01-12 18:44:30,025 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.246.1:8110_true,
+

@@ -1,0 +1,356 @@
+2021-01-13 11:52:41,323 INFO Starting Nacos v1.1.4 on DESKTOP-A9VL5KC with PID 10928 (D:\idea_workplace\confucius\nacos\target\nacos-server.jar started by LENOVO in D:\idea_workplace\confucius\nacos\bin)
+
+2021-01-13 11:52:41,790 INFO The following profiles are active: standalone
+
+2021-01-13 11:52:44,639 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$61968144] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 11:52:44,811 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 11:52:44,811 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@183ec003' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 11:52:44,826 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$866b23f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 11:52:44,858 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 11:52:45,764 INFO Tomcat initialized with port(s): 8848 (http)
+
+2021-01-13 11:52:45,799 INFO Starting service [Tomcat]
+
+2021-01-13 11:52:45,799 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2021-01-13 11:52:45,814 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Java\jdk1.8.0_11\bin;C:\Program Files\Java\jdk1.8.0_11\jre\bin;D:\TortoiseSVN\bin;D:\nodejs\;D:\myBlog\Git\cmd;D:\devTools\Maven3.6.3\apache-maven-3.6.3\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Chrome下载\pandoc-2.10.1-windows-x86_64\pandoc-2.10.1;D:\devTools\xshell7\;D:\devTools\xftp7\;C:\Users\LENOVO\AppData\Local\Microsoft\WindowsAppsC:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Bandizip\;C:\Users\LENOVO\AppData\Roaming\npm;D:\devTools\Microsoft VS Code\bin;D:\devTools\liquibase;.]
+
+2021-01-13 11:52:45,964 INFO Initializing Spring embedded WebApplicationContext
+
+2021-01-13 11:52:45,964 INFO Root WebApplicationContext: initialization completed in 4094 ms
+
+2021-01-13 11:52:55,805 INFO Use Mysql as the driver
+
+2021-01-13 11:52:56,270 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2021-01-13 11:52:56,535 INFO Adding welcome page: class path resource [static/index.html]
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/**/*.css'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/**/*.js'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/**/*.html'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/**/*.map'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/**/*.svg'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/**/*.png'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/**/*.ico'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/console-fe/public/**'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/v1/auth/login'], []
+
+2021-01-13 11:52:56,895 INFO Creating filter chain: Ant [pattern='/v1/console/health/**'], []
+
+2021-01-13 11:52:56,911 INFO Creating filter chain: Ant [pattern='/v1/cs/**'], []
+
+2021-01-13 11:52:56,911 INFO Creating filter chain: Ant [pattern='/v1/ns/**'], []
+
+2021-01-13 11:52:56,911 INFO Creating filter chain: Ant [pattern='/v1/cmdb/**'], []
+
+2021-01-13 11:52:56,911 INFO Creating filter chain: Ant [pattern='/actuator/**'], []
+
+2021-01-13 11:52:56,911 INFO Creating filter chain: Ant [pattern='/v1/console/server/**'], []
+
+2021-01-13 11:52:56,942 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75e91545, org.springframework.security.web.context.SecurityContextPersistenceFilter@505a9d7c, org.springframework.security.web.header.HeaderWriterFilter@1f2f9244, org.springframework.security.web.authentication.logout.LogoutFilter@24b6b8f6, com.alibaba.nacos.console.filter.JwtAuthenticationTokenFilter@60d1a32f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@129b4fe2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10993713, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@531c311e, org.springframework.security.web.session.SessionManagementFilter@6821ea29, org.springframework.security.web.access.ExceptionTranslationFilter@792bbc74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56bca85b]
+
+2021-01-13 11:52:57,067 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2021-01-13 11:52:57,162 INFO Initializing ExecutorService 'taskScheduler'
+
+2021-01-13 11:52:57,302 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2021-01-13 11:52:57,318 INFO Started Nacos in 17.447 seconds (JVM running for 18.194)
+
+2021-01-13 11:52:57,318 INFO Nacos Log files: D:\idea_workplace\confucius\nacos/logs/
+
+2021-01-13 11:52:57,318 INFO Nacos Conf files: D:\idea_workplace\confucius\nacos/conf/
+
+2021-01-13 11:52:57,318 INFO Nacos Data files: D:\idea_workplace\confucius\nacos/data/
+
+2021-01-13 11:52:57,318 INFO Nacos started successfully in stand alone mode.
+
+2021-01-13 11:53:00,762 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2021-01-13 11:53:00,762 INFO Initializing Servlet 'dispatcherServlet'
+
+2021-01-13 11:53:00,762 INFO Completed initialization in 0 ms
+
+2021-01-13 12:02:55,624 INFO [capacityManagement] start correct usage
+
+2021-01-13 12:02:55,811 WARN clearConfigHistory start
+
+2021-01-13 12:02:55,842 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 12:08:10,442 INFO Expired JWT token.
+
+2021-01-13 12:08:11,020 ERROR Responding with unauthorized error. Message - Full authentication is required to access this resource
+
+2021-01-13 12:12:55,853 WARN clearConfigHistory start
+
+2021-01-13 12:12:55,853 INFO [capacityManagement] start correct usage
+
+2021-01-13 12:12:55,853 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 12:22:55,856 INFO [capacityManagement] start correct usage
+
+2021-01-13 12:22:55,857 WARN clearConfigHistory start
+
+2021-01-13 12:22:55,857 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 12:32:55,859 INFO [capacityManagement] start correct usage
+
+2021-01-13 12:32:55,859 WARN clearConfigHistory start
+
+2021-01-13 12:32:55,889 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 12:58:46,790 INFO Starting Nacos v1.1.4 on DESKTOP-A9VL5KC with PID 920 (D:\idea_workplace\confucius\nacos\target\nacos-server.jar started by LENOVO in D:\idea_workplace\confucius\nacos\bin)
+
+2021-01-13 12:58:46,793 INFO The following profiles are active: standalone
+
+2021-01-13 12:58:49,886 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$3773779e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 12:58:49,992 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 12:58:49,997 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b247367' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 12:58:49,998 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$5c481a50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 12:58:50,005 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 12:58:50,710 INFO Tomcat initialized with port(s): 8848 (http)
+
+2021-01-13 12:58:50,748 INFO Starting service [Tomcat]
+
+2021-01-13 12:58:50,748 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2021-01-13 12:58:50,762 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Java\jdk1.8.0_11\bin;C:\Program Files\Java\jdk1.8.0_11\jre\bin;D:\TortoiseSVN\bin;D:\nodejs\;D:\myBlog\Git\cmd;D:\devTools\Maven3.6.3\apache-maven-3.6.3\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Chrome下载\pandoc-2.10.1-windows-x86_64\pandoc-2.10.1;D:\devTools\xshell7\;D:\devTools\xftp7\;C:\Users\LENOVO\AppData\Local\Microsoft\WindowsAppsC:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Bandizip\;C:\Users\LENOVO\AppData\Roaming\npm;D:\devTools\Microsoft VS Code\bin;D:\devTools\liquibase;.]
+
+2021-01-13 12:58:51,160 INFO Initializing Spring embedded WebApplicationContext
+
+2021-01-13 12:58:51,160 INFO Root WebApplicationContext: initialization completed in 4267 ms
+
+2021-01-13 12:59:00,072 INFO Use Mysql as the driver
+
+2021-01-13 12:59:00,576 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2021-01-13 12:59:00,762 INFO Adding welcome page: class path resource [static/index.html]
+
+2021-01-13 12:59:01,513 INFO Creating filter chain: Ant [pattern='/'], []
+
+2021-01-13 12:59:01,520 INFO Creating filter chain: Ant [pattern='/**/*.css'], []
+
+2021-01-13 12:59:01,521 INFO Creating filter chain: Ant [pattern='/**/*.js'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/**/*.html'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/**/*.map'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/**/*.svg'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/**/*.png'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/**/*.ico'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/console-fe/public/**'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/v1/auth/login'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/v1/console/health/**'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/v1/cs/**'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/v1/ns/**'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/v1/cmdb/**'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/actuator/**'], []
+
+2021-01-13 12:59:01,522 INFO Creating filter chain: Ant [pattern='/v1/console/server/**'], []
+
+2021-01-13 12:59:01,569 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@531c311e, org.springframework.security.web.context.SecurityContextPersistenceFilter@129b4fe2, org.springframework.security.web.header.HeaderWriterFilter@6821ea29, org.springframework.security.web.authentication.logout.LogoutFilter@2bb7bd00, com.alibaba.nacos.console.filter.JwtAuthenticationTokenFilter@22b53226, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19ae6bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24b6b8f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fcb4808, org.springframework.security.web.session.SessionManagementFilter@505a9d7c, org.springframework.security.web.access.ExceptionTranslationFilter@1f2f9244, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75e91545]
+
+2021-01-13 12:59:01,832 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2021-01-13 12:59:01,866 INFO Initializing ExecutorService 'taskScheduler'
+
+2021-01-13 12:59:01,976 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2021-01-13 12:59:01,982 INFO Started Nacos in 16.799 seconds (JVM running for 20.458)
+
+2021-01-13 12:59:01,982 INFO Nacos Log files: D:\idea_workplace\confucius\nacos/logs/
+
+2021-01-13 12:59:01,983 INFO Nacos Conf files: D:\idea_workplace\confucius\nacos/conf/
+
+2021-01-13 12:59:01,983 INFO Nacos Data files: D:\idea_workplace\confucius\nacos/data/
+
+2021-01-13 12:59:01,983 INFO Nacos started successfully in stand alone mode.
+
+2021-01-13 12:59:04,500 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2021-01-13 12:59:04,500 INFO Initializing Servlet 'dispatcherServlet'
+
+2021-01-13 12:59:04,525 INFO Completed initialization in 24 ms
+
+2021-01-13 13:08:59,415 INFO [capacityManagement] start correct usage
+
+2021-01-13 13:08:59,602 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 13:09:00,071 WARN clearConfigHistory start
+
+2021-01-13 13:18:59,620 INFO [capacityManagement] start correct usage
+
+2021-01-13 13:18:59,620 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 13:19:00,198 WARN clearConfigHistory start
+
+2021-01-13 13:28:59,622 INFO [capacityManagement] start correct usage
+
+2021-01-13 13:28:59,622 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 13:29:00,211 WARN clearConfigHistory start
+
+2021-01-13 13:38:59,631 INFO [capacityManagement] start correct usage
+
+2021-01-13 13:38:59,631 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 13:39:00,241 WARN clearConfigHistory start
+
+2021-01-13 13:48:59,634 INFO [capacityManagement] start correct usage
+
+2021-01-13 13:48:59,634 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 13:49:00,248 WARN clearConfigHistory start
+
+2021-01-13 13:58:59,659 INFO [capacityManagement] start correct usage
+
+2021-01-13 13:58:59,659 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 13:59:00,253 WARN clearConfigHistory start
+
+2021-01-13 14:08:59,661 INFO [capacityManagement] start correct usage
+
+2021-01-13 14:08:59,662 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 14:09:00,259 WARN clearConfigHistory start
+
+2021-01-13 14:18:59,677 INFO [capacityManagement] start correct usage
+
+2021-01-13 14:18:59,677 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 14:19:00,282 WARN clearConfigHistory start
+
+2021-01-13 14:28:59,680 INFO [capacityManagement] start correct usage
+
+2021-01-13 14:28:59,680 INFO [capacityManagement] end correct usage, cost: 0s
+
+2021-01-13 14:29:00,306 WARN clearConfigHistory start
+
+2021-01-13 17:36:45,093 INFO Starting Nacos v1.1.4 on DESKTOP-A9VL5KC with PID 15212 (D:\idea_workplace\confucius\nacos\target\nacos-server.jar started by LENOVO in D:\idea_workplace\confucius\nacos\bin)
+
+2021-01-13 17:36:45,116 INFO The following profiles are active: standalone
+
+2021-01-13 17:36:48,021 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$9c5b4113] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 17:36:48,130 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 17:36:48,130 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7188af83' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 17:36:48,130 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$c12fe3c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 17:36:48,146 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-01-13 17:36:48,974 INFO Tomcat initialized with port(s): 8848 (http)
+
+2021-01-13 17:36:49,005 INFO Starting service [Tomcat]
+
+2021-01-13 17:36:49,005 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2021-01-13 17:36:49,021 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Java\jdk1.8.0_11\bin;C:\Program Files\Java\jdk1.8.0_11\jre\bin;D:\TortoiseSVN\bin;D:\nodejs\;D:\myBlog\Git\cmd;D:\devTools\Maven3.6.3\apache-maven-3.6.3\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Chrome下载\pandoc-2.10.1-windows-x86_64\pandoc-2.10.1;D:\devTools\xshell7\;D:\devTools\xftp7\;C:\Users\LENOVO\AppData\Local\Microsoft\WindowsAppsC:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Bandizip\;C:\Users\LENOVO\AppData\Roaming\npm;D:\devTools\Microsoft VS Code\bin;D:\devTools\liquibase;.]
+
+2021-01-13 17:36:49,126 INFO Initializing Spring embedded WebApplicationContext
+
+2021-01-13 17:36:49,126 INFO Root WebApplicationContext: initialization completed in 3952 ms
+
+2021-01-13 17:36:57,896 INFO Use Mysql as the driver
+
+2021-01-13 17:36:58,633 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2021-01-13 17:36:58,836 INFO Adding welcome page: class path resource [static/index.html]
+
+2021-01-13 17:36:59,337 INFO Creating filter chain: Ant [pattern='/'], []
+
+2021-01-13 17:36:59,373 INFO Creating filter chain: Ant [pattern='/**/*.css'], []
+
+2021-01-13 17:36:59,381 INFO Creating filter chain: Ant [pattern='/**/*.js'], []
+
+2021-01-13 17:36:59,391 INFO Creating filter chain: Ant [pattern='/**/*.html'], []
+
+2021-01-13 17:36:59,392 INFO Creating filter chain: Ant [pattern='/**/*.map'], []
+
+2021-01-13 17:36:59,392 INFO Creating filter chain: Ant [pattern='/**/*.svg'], []
+
+2021-01-13 17:36:59,395 INFO Creating filter chain: Ant [pattern='/**/*.png'], []
+
+2021-01-13 17:36:59,395 INFO Creating filter chain: Ant [pattern='/**/*.ico'], []
+
+2021-01-13 17:36:59,395 INFO Creating filter chain: Ant [pattern='/console-fe/public/**'], []
+
+2021-01-13 17:36:59,395 INFO Creating filter chain: Ant [pattern='/v1/auth/login'], []
+
+2021-01-13 17:36:59,396 INFO Creating filter chain: Ant [pattern='/v1/console/health/**'], []
+
+2021-01-13 17:36:59,396 INFO Creating filter chain: Ant [pattern='/v1/cs/**'], []
+
+2021-01-13 17:36:59,396 INFO Creating filter chain: Ant [pattern='/v1/ns/**'], []
+
+2021-01-13 17:36:59,396 INFO Creating filter chain: Ant [pattern='/v1/cmdb/**'], []
+
+2021-01-13 17:36:59,397 INFO Creating filter chain: Ant [pattern='/actuator/**'], []
+
+2021-01-13 17:36:59,397 INFO Creating filter chain: Ant [pattern='/v1/console/server/**'], []
+
+2021-01-13 17:36:59,445 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75f5fd58, org.springframework.security.web.context.SecurityContextPersistenceFilter@e077866, org.springframework.security.web.header.HeaderWriterFilter@726e5805, org.springframework.security.web.authentication.logout.LogoutFilter@7b324585, com.alibaba.nacos.console.filter.JwtAuthenticationTokenFilter@37b70343, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c2b6087, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c7fd41f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@306851c7, org.springframework.security.web.session.SessionManagementFilter@4b672daa, org.springframework.security.web.access.ExceptionTranslationFilter@22b53226, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c3b6c6e]
+
+2021-01-13 17:36:59,773 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2021-01-13 17:36:59,872 INFO Initializing ExecutorService 'taskScheduler'
+
+2021-01-13 17:37:00,034 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2021-01-13 17:37:00,049 INFO Started Nacos in 16.75 seconds (JVM running for 21.329)
+
+2021-01-13 17:37:00,049 INFO Nacos Log files: D:\idea_workplace\confucius\nacos/logs/
+
+2021-01-13 17:37:00,049 INFO Nacos Conf files: D:\idea_workplace\confucius\nacos/conf/
+
+2021-01-13 17:37:00,049 INFO Nacos Data files: D:\idea_workplace\confucius\nacos/data/
+
+2021-01-13 17:37:00,049 INFO Nacos started successfully in stand alone mode.
+
+2021-01-13 17:37:01,647 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2021-01-13 17:37:01,647 INFO Initializing Servlet 'dispatcherServlet'
+
+2021-01-13 17:37:01,663 INFO Completed initialization in 16 ms
+
+2021-01-13 17:39:22,713 INFO Expired JWT token.
+
+2021-01-13 17:39:23,140 ERROR Responding with unauthorized error. Message - Full authentication is required to access this resource
+
+2021-01-13 17:46:57,476 INFO [capacityManagement] start correct usage
+
+2021-01-13 17:46:57,913 WARN clearConfigHistory start
+
+2021-01-13 17:46:58,903 INFO [capacityManagement] end correct usage, cost: 1s
+
