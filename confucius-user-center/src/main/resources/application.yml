@@ -1,0 +1,17 @@
+server:
+  port: 8160 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: confucius-user-center # 服务名
+  #spring:
+  jackson: #返回json的全局时间格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #mybatis日志
+  mapper-locations: classpath:top/javahai/confucius/service/uc/mapper/xml/*.xml

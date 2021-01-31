@@ -1,0 +1,42 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.108.169.57:8848 # nacos服务地址
+    gateway:
+      discovery:
+        locator:
+          enabled: true #设置gateway可以发现注册中心的微服务
+      routes:
+        - id: confucius-education
+          uri: lb://confucius-education #lb：集群环境下通过负载均衡的方式调用
+          predicates:
+            - Path=/user/**,/admin/edu/**
+        - id: confucius-portal
+          uri: lb://confucius-portal
+          predicates:
+            - Path=/*/portal/**
+        - id: confucius-cms
+          uri: lb://confucius-cms
+          predicates:
+            - Path=/*/cms/**
+        - id: confucius-oss
+          uri: lb://confucius-oss
+          predicates:
+            - Path=/*/oss/**
+        - id: confucius-sms
+          uri: lb://confucius-sms
+          predicates:
+            - Path=/*/sms/**
+        - id: confucius-trade
+          uri: lb://confucius-trade
+          predicates:
+            - Path=/*/trade/**
+        - id: confucius-user-center
+          uri: lb://confucius-user-center
+          predicates:
+            - Path=/*/uc/**
+        - id: confucius-vod
+          uri: lb://confucius-vod
+          predicates:
+            - Path=/*/vod/**

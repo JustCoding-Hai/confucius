@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.javahai.confucius.service.education.mapper.SubjectMapper">
+
+
+    <resultMap id="nestedSubjectList" type="top.javahai.confucius.service.education.entity.vo.SubjectVO">
+        <id  property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="sort" column="sort" />
+        <collection property="children"
+                    column="id"
+                    ofType="top.javahai.confucius.service.education.entity.vo.SubjectVO"
+                    select="getNestedSubjectList"/>
+    </resultMap>
+
+
+    <select id="getNestedSubjectList" resultMap="nestedSubjectList">
+        SELECT id,title,sort from edu_subject where parent_id=#{parentId}
+    </select>
+
+</mapper>

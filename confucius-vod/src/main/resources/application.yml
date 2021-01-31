@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: confucius-vod # 服务名
+

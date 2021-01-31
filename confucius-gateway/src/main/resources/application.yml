@@ -1,0 +1,8 @@
+server:
+  port: 9110 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: confucius-gateway # 服务名

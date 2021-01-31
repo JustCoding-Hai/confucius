@@ -1,0 +1,8 @@
+server:
+  port: 8260 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: confucius-sms # 服务名
