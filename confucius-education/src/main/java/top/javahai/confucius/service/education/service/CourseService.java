@@ -81,17 +81,4 @@ public interface CourseService extends IService<Course> {
      */
     List<CourseInfoVO> selectCourseInfoVO(QueryWrapper<CourseInfoVO> queryWrapper);
 
-    /**
-     * 前台搜索课程
-     * @param webCourseQueryVo
-     * @return
-     */
-    List<Course> webSelectCourseInfoList(WebCourseQueryVO webCourseQueryVo);
-
-    /**
-     * 课程信息显示
-     * @param courseId
-     * @return
-     */
-    WebCourseVO selectWebCourseVoById(String courseId);
 }

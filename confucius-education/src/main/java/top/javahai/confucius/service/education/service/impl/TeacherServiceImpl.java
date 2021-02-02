@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import top.javahai.confucius.frame.common.helper.ObjectHelper;
 import top.javahai.confucius.frame.common.helper.StringHelper;
 import top.javahai.confucius.service.education.entity.Teacher;
-import top.javahai.confucius.service.education.entity.vo.CourseInfoVO;
-import top.javahai.confucius.service.education.entity.vo.WebTeacherInfoVO;
 import top.javahai.confucius.service.education.entity.vo.TeacherQueryVO;
 import top.javahai.confucius.service.education.mapper.TeacherMapper;
 import top.javahai.confucius.service.education.remote.OssClient;
@@ -93,15 +91,4 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         return null;
     }
 
-    @Override
-    public WebTeacherInfoVO getTeacherInfoById(String id) {
-        Teacher teacher = getById(id);
-        QueryWrapper<CourseInfoVO> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("t.id",id);
-        List<CourseInfoVO> courseInfoVOList = courseService.selectCourseInfoVO(queryWrapper);
-        WebTeacherInfoVO webTeacherInfoVO = new WebTeacherInfoVO();
-        webTeacherInfoVO.setTeacher(teacher);
-        webTeacherInfoVO.setCourseInfoVOList(courseInfoVOList);
-        return webTeacherInfoVO;
-    }
 }

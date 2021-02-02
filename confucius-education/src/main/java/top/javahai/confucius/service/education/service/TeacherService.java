@@ -3,7 +3,6 @@ package top.javahai.confucius.service.education.service;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import top.javahai.confucius.service.education.entity.Teacher;
 import com.baomidou.mybatisplus.extension.service.IService;
-import top.javahai.confucius.service.education.entity.vo.WebTeacherInfoVO;
 import top.javahai.confucius.service.education.entity.vo.TeacherQueryVO;
 
 import java.util.List;
@@ -46,12 +45,4 @@ public interface TeacherService extends IService<Teacher> {
      * @return
      */
     String getTeacherAvatarById(String id);
-
-
-    /**
-     * 获取讲师的详细信息，包括其教的课程
-     * @param id
-     * @return
-     */
-    WebTeacherInfoVO getTeacherInfoById(String id);
 }

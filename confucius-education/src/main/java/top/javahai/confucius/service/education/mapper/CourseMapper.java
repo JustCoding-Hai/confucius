@@ -8,7 +8,6 @@ import top.javahai.confucius.service.education.entity.Course;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import top.javahai.confucius.service.education.entity.vo.CourseInfoVO;
 import top.javahai.confucius.service.education.entity.vo.CoursePublishInfoVO;
-import top.javahai.confucius.service.education.entity.vo.WebCourseVO;
 
 import java.util.List;
 
@@ -40,11 +39,4 @@ public interface CourseMapper extends BaseMapper<Course> {
      * @return
      */
     CoursePublishInfoVO getCoursePublishVOById(@Param("id") String id);
-
-    /**
-     * 根据id获取课程和对应的讲师信息
-     * @param courseId
-     * @return
-     */
-    WebCourseVO selectWebCourseVOById(@Param("courseId") String courseId);
 }

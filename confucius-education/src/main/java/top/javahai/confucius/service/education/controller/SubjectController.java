@@ -1,4 +1,4 @@
-package top.javahai.confucius.service.education.controller.admin;
+package top.javahai.confucius.service.education.controller;
 
 
 import ch.qos.logback.core.joran.spi.NoAutoStart;

@@ -1,4 +1,4 @@
-package top.javahai.confucius.service.education.controller.admin;
+package top.javahai.confucius.service.education.controller;
 
 import com.baomidou.mybatisplus.extension.api.R;
 import io.swagger.annotations.Api;

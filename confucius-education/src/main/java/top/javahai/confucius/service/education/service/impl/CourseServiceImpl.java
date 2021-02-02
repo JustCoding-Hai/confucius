@@ -188,53 +188,5 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         return baseMapper.selectPageByCourseQueryVO(null,queryWrapper);
     }
 
-    @Override
-    public List<Course> webSelectCourseInfoList(WebCourseQueryVO webCourseQueryVo) {
-        QueryWrapper<Course> queryWrapper = new QueryWrapper<>();
-
-        //查询已发布的课程
-        queryWrapper.eq("status", CourseConstants.COURSE_STATUS_PUBLISHED);
-
-        if (!StringHelper.isEmpty(webCourseQueryVo.getSubjectParentId())) {
-            queryWrapper.eq("subject_parent_id", webCourseQueryVo.getSubjectParentId());
-        }
-
-        if (!StringHelper.isEmpty(webCourseQueryVo.getSubjectId())) {
-            queryWrapper.eq("subject_id", webCourseQueryVo.getSubjectId());
-        }
-
-        if (!StringHelper.isEmpty(webCourseQueryVo.getBuyCountSort())) {
-            queryWrapper.orderByDesc("buy_count");
-        }
-
-        if (!StringHelper.isEmpty(webCourseQueryVo.getGmtCreateSort())) {
-            queryWrapper.orderByDesc("gmt_create");
-        }
-
-        if (!StringHelper.isEmpty(webCourseQueryVo.getPriceSort())) {
-            if (webCourseQueryVo.getType()==null||webCourseQueryVo.getType()==1){
-                queryWrapper.orderByAsc("price");
-            }else {
-                queryWrapper.orderByDesc("price");
-            }
-        }
-
-        return baseMapper.selectList(queryWrapper);
-    }
-
-    @Override
-    public WebCourseVO selectWebCourseVoById(String courseId) {
-        //更新课程的浏览量
-        Course course = baseMapper.selectById(courseId);
-        course.setViewCount(course.getViewCount()+1);
-        baseMapper.updateById(course);
-        //获取课程信息
-        WebCourseVO webCourseVO=baseMapper.selectWebCourseVOById(courseId);
-        //获取课程的章节、课时信息
-        List<ChapterVO> chapterVOList = chapterService.getNestedList(courseId);
-        webCourseVO.setChapterVOList(chapterVOList);
-        return webCourseVO;
-    }
-
 
 }
