@@ -8,8 +8,8 @@ spring:
         locator:
           enabled: true #设置gateway可以发现注册中心的微服务
       routes:
-        - id: confucius-education
-          uri: lb://confucius-education #lb：集群环境下通过负载均衡的方式调用
+        - id: confucius-admin
+          uri: lb://confucius-admin #lb：集群环境下通过负载均衡的方式调用
           predicates:
             - Path=/user/**,/admin/edu/**
         - id: confucius-portal
