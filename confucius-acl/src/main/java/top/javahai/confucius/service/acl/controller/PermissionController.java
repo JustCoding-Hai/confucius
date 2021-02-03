@@ -2,6 +2,7 @@ package top.javahai.confucius.service.acl.controller;
 
 
 import com.baomidou.mybatisplus.extension.api.R;
+import top.javahai.confucius.frame.common.result.ResultVO;
 import top.javahai.confucius.service.acl.entity.Permission;
 import top.javahai.confucius.service.acl.service.PermissionService;
 import io.swagger.annotations.ApiOperation;
@@ -25,12 +26,11 @@ public class PermissionController {
     @Autowired
     private PermissionService permissionService;
 
-    //获取全部菜单
     @ApiOperation(value = "查询所有菜单")
     @GetMapping
-    public R indexAllPermission() {
-        List<Permission> list =  permissionService.queryAllMenuGuli();
-        return R.ok().data("children",list);
+    public ResultVO<List<Permission>> indexAllPermission() {
+        List<Permission> list =  permissionService.queryAllMenu();
+        return new ResultVO<List<Permission>>().success().data(list);
     }
 
 //    @ApiOperation(value = "递归删除菜单")

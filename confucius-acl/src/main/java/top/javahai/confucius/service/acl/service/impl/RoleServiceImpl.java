@@ -65,7 +65,9 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
 
         List<UserRole> userRoleList = new ArrayList<>();
         for(String roleId : roleIds) {
-            if(StringUtils.isEmpty(roleId)) continue;
+            if(StringUtils.isEmpty(roleId)) {
+                continue;
+            }
             UserRole userRole = new UserRole();
             userRole.setUserId(userId);
             userRole.setRoleId(roleId);

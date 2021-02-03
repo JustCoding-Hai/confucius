@@ -14,11 +14,9 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -37,18 +35,7 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     @Autowired
     private UserService userService;
 
-    //获取全部菜单
-    @Override
-    public List<Permission> queryAllMenu() {
 
-        QueryWrapper<Permission> wrapper = new QueryWrapper<>();
-        wrapper.orderByDesc("id");
-        List<Permission> permissionList = baseMapper.selectList(wrapper);
-
-        List<Permission> result = bulid(permissionList);
-
-        return result;
-    }
 
     //根据角色获取菜单
     @Override
@@ -81,37 +68,7 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         return permissionList;
     }
 
-    //给角色分配权限
-    @Override
-    public void saveRolePermissionRealtionShip(String roleId, String[] permissionIds) {
 
-        rolePermissionService.remove(new QueryWrapper<RolePermission>().eq("role_id", roleId));
-
-
-
-        List<RolePermission> rolePermissionList = new ArrayList<>();
-        for(String permissionId : permissionIds) {
-            if(StringUtils.isEmpty(permissionId)) continue;
-
-            RolePermission rolePermission = new RolePermission();
-            rolePermission.setRoleId(roleId);
-            rolePermission.setPermissionId(permissionId);
-            rolePermissionList.add(rolePermission);
-        }
-        rolePermissionService.saveBatch(rolePermissionList);
-    }
-
-    //递归删除菜单
-    @Override
-    public void removeChildById(String id) {
-        List<String> idList = new ArrayList<>();
-        this.selectChildListById(id, idList);
-
-        idList.add(id);
-        baseMapper.deleteBatchIds(idList);
-    }
-
-    //根据用户id获取用户菜单
     @Override
     public List<String> selectPermissionValueByUserId(String id) {
 
@@ -205,21 +162,23 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     }
 
 
-    //========================递归查询所有菜单================================================
-    //获取全部菜单
     @Override
-    public List<Permission> queryAllMenuGuli() {
+    public List<Permission> queryAllMenu() {
         //1 查询菜单表所有数据
         QueryWrapper<Permission> wrapper = new QueryWrapper<>();
         wrapper.orderByDesc("id");
         List<Permission> permissionList = baseMapper.selectList(wrapper);
         //2 把查询所有菜单list集合按照要求进行封装
-        List<Permission> resultList = bulidPermission(permissionList);
+        List<Permission> resultList = buildPermission(permissionList);
         return resultList;
     }
 
-    //把返回所有菜单list集合进行封装的方法
-    public static List<Permission> bulidPermission(List<Permission> permissionList) {
+    /**
+     * 把返回所有菜单list集合进行封装的方法
+     * @param permissionList
+     * @return
+     */
+    private static List<Permission> buildPermission(List<Permission> permissionList) {
 
         //创建list集合，用于数据最终封装
         List<Permission> finalNode = new ArrayList<>();
@@ -260,7 +219,7 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
 
     //============递归删除菜单==================================
     @Override
-    public void removeChildByIdGuli(String id) {
+    public void removeChildById(String id) {
         //1 创建list集合，用于封装所有删除菜单id值
         List<String> idList = new ArrayList<>();
         //2 向idList集合设置删除菜单id
@@ -288,7 +247,7 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
 
     //=========================给角色分配菜单=======================
     @Override
-    public void saveRolePermissionRealtionShipGuli(String roleId, String[] permissionIds) {
+    public void saveRolePermissionRelationShip(String roleId, String[] permissionIds) {
         //roleId角色id
         //permissionId菜单id 数组形式
         //1 创建list集合，用于封装添加数据
