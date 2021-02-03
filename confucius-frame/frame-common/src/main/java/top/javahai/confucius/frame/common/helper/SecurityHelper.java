@@ -33,4 +33,6 @@ public class SecurityHelper {
             throw new RuntimeException("MD5加密出错！！+" + e);
         }
     }
+    //添加Spring Security的加密
+
 }

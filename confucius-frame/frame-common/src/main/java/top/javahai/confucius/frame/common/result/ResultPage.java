@@ -3,6 +3,7 @@ package top.javahai.confucius.frame.common.result;
 import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  **/
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @ApiModel(value = "ResultPage",description = "统一分页数据结果")
 public class ResultPage {
     private Long total;

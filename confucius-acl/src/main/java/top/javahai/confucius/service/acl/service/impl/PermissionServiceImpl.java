@@ -1,8 +1,10 @@
 package top.javahai.confucius.service.acl.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import org.springframework.transaction.annotation.Transactional;
 import top.javahai.confucius.frame.common.helper.CollectionHelper;
 import top.javahai.confucius.service.acl.entity.Permission;
+import top.javahai.confucius.service.acl.entity.Role;
 import top.javahai.confucius.service.acl.entity.RolePermission;
 import top.javahai.confucius.service.acl.entity.User;
 import top.javahai.confucius.service.acl.helper.MemuHelper;
@@ -249,8 +251,12 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void saveRolePermissionRelationShip(String roleId, String[] permissionIds) {
-        //1 创建list集合，用于封装添加数据
+        //1. 先删除原有的权限
+        QueryWrapper<RolePermission> queryWrapper = new QueryWrapper<RolePermission>().eq("role_id", roleId);
+        rolePermissionService.remove(queryWrapper);
+        //2. 创建list集合，用于封装添加数据
         List<RolePermission> rolePermissionList = new ArrayList<>();
         //遍历所有菜单数组
         for(String perId : permissionIds) {
