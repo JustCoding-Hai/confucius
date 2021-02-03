@@ -52,8 +52,8 @@ public interface PermissionService extends IService<Permission> {
 
     /**
      * 给角色分配权限
-     * @param roleId
-     * @param permissionId
+     * @param roleId roleId角色id
+     * @param permissionId permissionId菜单id 数组形式
      */
     void saveRolePermissionRelationShip(String roleId, String[] permissionId);
 }

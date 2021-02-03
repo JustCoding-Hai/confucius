@@ -13,7 +13,7 @@ import java.util.Date;
 
 /**
  * @author Hai
- * @program: zhkuschool-frame
+ * @program: confucius-frame
  * @description: 实体类的公共父类
  * @create 2020/11/15 - 13:40
  **/
@@ -23,7 +23,7 @@ import java.util.Date;
 public class BaseEntity {
     private static final long serialVersionUID=1L;
 
-    @ApiModelProperty(value = "讲师ID")
+    @ApiModelProperty(value = "ID")
     @TableId(value = "id", type = IdType.ASSIGN_ID)
     private String id;
 

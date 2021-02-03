@@ -9,6 +9,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.transform.Result;
 import java.util.List;
 
 /**
@@ -33,20 +34,20 @@ public class PermissionController {
         return new ResultVO<List<Permission>>().success().data(list);
     }
 
-//    @ApiOperation(value = "递归删除菜单")
-//    @DeleteMapping("remove/{id}")
-//    public R remove(@PathVariable String id) {
-//        permissionService.removeChildByIdGuli(id);
-//        return R.ok();
-//    }
-//
-//    @ApiOperation(value = "给角色分配权限")
-//    @PostMapping("/doAssign")
-//    public R doAssign(String roleId,String[] permissionId) {
-//        permissionService.saveRolePermissionRealtionShipGuli(roleId,permissionId);
-//        return R.ok();
-//    }
-//
+    @ApiOperation(value = "递归删除菜单")
+    @DeleteMapping("remove/{id}")
+    public ResultVO remove(@PathVariable String id) {
+        permissionService.removeChildById(id);
+        return ResultVO.ok().message("删除成功！");
+    }
+
+    @ApiOperation(value = "给角色分配权限")
+    @PostMapping("/doAssign")
+    public ResultVO doAssign(String roleId,String[] permissionId) {
+        permissionService.saveRolePermissionRelationShip(roleId,permissionId);
+        return ResultVO.ok().message("操作成功！");
+    }
+
 //    @ApiOperation(value = "根据角色获取菜单")
 //    @GetMapping("toAssign/{roleId}")
 //    public R toAssign(@PathVariable String roleId) {

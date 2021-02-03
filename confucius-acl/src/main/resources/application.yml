@@ -1,3 +1,14 @@
 spring:
   profiles:
     active: dev
+  application:
+    name: confucius-admin # 服务名
+  jackson:
+    time-zone: GMT+8 #指定时区为东八区
+    date-format: yyyy-MM-dd HH:mm:ss #返回json的全局时间格式
+
+#mybatis日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:top/javahai/confucius/service/acl/mapper/xml/*.xml
