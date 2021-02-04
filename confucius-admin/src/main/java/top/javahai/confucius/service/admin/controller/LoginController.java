@@ -6,7 +6,7 @@ import top.javahai.confucius.frame.common.result.ResultVO;
 
 /**
  * @author Hai
- * @program: zhkuschool-frame
+ * @program: confucius-frame
  * @description: 登录接口控制器
  * @create 2021/1/9 - 17:30
  **/

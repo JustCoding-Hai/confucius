@@ -44,3 +44,7 @@ spring:
           uri: lb://confucius-statistics
           predicates:
             - Path=/*/statistics/**
+        - id: confucius-acl
+          url: lb://confucius-acl
+          predicates:
+            - Path:/admin/acl/**

@@ -37,8 +37,9 @@ public class IndexServiceImpl implements IndexService {
      * @param username
      * @return
      */
+    @Override
     public Map<String, Object> getUserInfo(String username) {
-        Map<String, Object> result = new HashMap<>();
+        Map<String, Object> result = new HashMap<>(16);
         User user = userService.selectByUsername(username);
         if (null == user) {
             //throw new GuliException(ResultCodeEnum.FETCH_USERINFO_ERROR);
@@ -68,6 +69,7 @@ public class IndexServiceImpl implements IndexService {
      * @param username
      * @return
      */
+    @Override
     public List<JSONObject> getMenu(String username) {
         User user = userService.selectByUsername(username);
 
